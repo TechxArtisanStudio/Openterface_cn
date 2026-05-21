@@ -8,23 +8,23 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
-  { label: 'Home', href: '/' },
+  { label: '首页', href: '/' },
   {
-    label: 'Products',
+    label: '产品',
     href: '#',
     children: [
-      { label: 'KeyMod Series', href: '/products/keymod/' },
-      { label: 'KVM-GO Series', href: '/products/kvm-go/' },
+      { label: 'KeyMod 系列', href: '/products/keymod/' },
+      { label: 'KVM-GO 系列', href: '/products/kvm-go/' },
       { label: 'Mini-KVM', href: '/products/minikvm/' },
       { label: 'uConsole KVM Extension', href: '/products/uconsole-kvm-extension/' },
-      { label: 'Accessories', href: '/products/accessories/' },
+      { label: '配件', href: '/products/accessories/' },
     ],
   },
-  { label: 'Videos', href: '/videos/' },
-  { label: 'Use Cases', href: '/use-cases/' },
-  { label: 'FAQs', href: legacyPath('/faq/'), external: true },
-  { label: 'App', href: legacyPath('/app/overview/'), external: true },
-  { label: 'Tutorial', href: legacyPath('/tutorial/'), external: true },
-  { label: 'Support', href: legacyPath('/support/'), external: true },
-  { label: 'About', href: '/about/' },
+  { label: '视频', href: '/videos/' },
+  { label: '使用案例', href: '/use-cases/' },
+  { label: '常见问题', href: legacyPath('/faq/'), external: true },
+  { label: '应用', href: legacyPath('/app/overview/'), external: true },
+  { label: '教程', href: legacyPath('/tutorial/'), external: true },
+  { label: '支持', href: legacyPath('/support/'), external: true },
+  { label: '关于我们', href: '/about/' },
 ];

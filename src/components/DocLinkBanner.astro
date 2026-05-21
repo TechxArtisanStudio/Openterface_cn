@@ -3,7 +3,7 @@ interface Props {
   message?: string;
 }
 
-const { message = 'Full documentation for this section lives on our docs site while migration is in progress.' } =
+const { message = '在我们迁移内容期间，本板块的完整文档请访问我们的文档网站。' } =
   Astro.props;
 
 import { siteConfig } from '../config/site';
@@ -17,6 +17,6 @@ import { siteConfig } from '../config/site';
     target="_blank"
     rel="noopener"
   >
-    Open documentation →
+    打开文档 →
   </a>
 </div>

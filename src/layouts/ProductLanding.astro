@@ -29,7 +29,7 @@ const { product } = Astro.props;
             {product.buyLabel}
           </a>
           <a href={siteConfig.links.appOverview} class="btn btn-secondary" target="_blank" rel="noopener">
-            Download App
+            下载应用
           </a>
         </div>
         {
@@ -39,7 +39,7 @@ const { product } = Astro.props;
               <span>{product.funding.date}</span>
               <span>|</span>
               <span>
-                <strong>{product.funding.backers}</strong> Backers
+                <strong>{product.funding.backers}</strong> 支持者
               </span>
             </div>
           )
@@ -48,7 +48,7 @@ const { product } = Astro.props;
     </div>
   </section>
 
-  <DocLinkBanner message="Detailed specs, setup guides, and FAQs are on our documentation site while we complete this migration." />
+  <DocLinkBanner message="在我们完成迁移期间，详细规格、安装指南和常见问题请查阅我们的文档网站。" />
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
@@ -58,7 +58,7 @@ const { product } = Astro.props;
 
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">The Problem</h2>
+      <h2 class="section-title text-center">痛点描述</h2>
       <ul class="mx-auto mt-6 grid max-w-3xl gap-3">
         {
           product.painPoints.map((point) => (
@@ -74,7 +74,7 @@ const { product } = Astro.props;
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">The Solution</h2>
+      <h2 class="section-title text-center">解决方案</h2>
       <ul class="mx-auto mt-6 grid max-w-3xl gap-3">
         {
           product.solutions.map((point) => (
@@ -90,11 +90,11 @@ const { product } = Astro.props;
 
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">Hardware + Software</h2>
-      <p class="section-subtitle text-center">Openterface products work best with our open-source host apps.</p>
+      <h2 class="section-title text-center">硬件 + 软件</h2>
+      <p class="section-subtitle text-center">Openterface 产品配合我们的开源控制端应用使用效果更佳。</p>
       <div class="mt-8 grid gap-6 md:grid-cols-2">
         <div class="card">
-          <h3 class="text-lg font-semibold text-primary-dark">Hardware</h3>
+          <h3 class="text-lg font-semibold text-primary-dark">硬件</h3>
           <ul class="mt-4 space-y-4">
             {
               product.hwFeatures.map((f) => (
@@ -107,7 +107,7 @@ const { product } = Astro.props;
           </ul>
         </div>
         <div class="card">
-          <h3 class="text-lg font-semibold text-primary-dark">Software</h3>
+          <h3 class="text-lg font-semibold text-primary-dark">软件</h3>
           <ul class="mt-4 space-y-4">
             {
               product.swFeatures.length > 0 ? (
@@ -118,7 +118,7 @@ const { product } = Astro.props;
                   </li>
                 ))
               ) : (
-                <li class="text-muted">See TxA Shop for accessory compatibility details.</li>
+                <li class="text-muted">请访问 TxA 商店查看配件兼容性详情。</li>
               )
             }
           </ul>
@@ -131,7 +131,7 @@ const { product } = Astro.props;
     product.specs.length > 0 && (
       <section class="py-12">
         <div class="mx-auto max-w-6xl px-4">
-          <h2 class="section-title text-center">Key Specs</h2>
+          <h2 class="section-title text-center">核心规格</h2>
           <dl class="mx-auto mt-6 grid max-w-2xl gap-4">
             {product.specs.map((spec) => (
               <div class="flex justify-between border-b border-gray-200 pb-2">
@@ -147,7 +147,7 @@ const { product } = Astro.props;
 
   <section class="bg-surface py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">Use Cases</h2>
+      <h2 class="section-title text-center">使用案例</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         {
           product.useCases.map((uc) => (
@@ -160,7 +160,7 @@ const { product } = Astro.props;
 
   <section class="py-12">
     <div class="mx-auto max-w-6xl px-4">
-      <h2 class="section-title text-center">Documentation</h2>
+      <h2 class="section-title text-center">文档</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         {
           product.docLinks.map((link) => (
@@ -175,8 +175,8 @@ const { product } = Astro.props;
 
   <section class="bg-primary-dark py-12 text-white">
     <div class="mx-auto max-w-6xl px-4 text-center">
-      <h2 class="text-2xl font-bold">Ready to get started?</h2>
-      <p class="mt-2 opacity-90">Order hardware and download the Openterface app for your platform.</p>
+      <h2 class="text-2xl font-bold">准备好了吗？</h2>
+      <p class="mt-2 opacity-90">订购硬件并下载适配您平台的 Openterface 应用。</p>
       <div class="mt-6 flex flex-wrap justify-center gap-3">
         <a
           href={product.buyHref}
@@ -187,7 +187,7 @@ const { product } = Astro.props;
           {product.buyLabel}
         </a>
         <a href={siteConfig.links.appOverview} class="btn border border-white/40 hover:bg-white/10" target="_blank" rel="noopener">
-          Download App
+          下载应用
         </a>
       </div>
     </div>

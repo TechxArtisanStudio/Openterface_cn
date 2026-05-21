@@ -1,9 +1,9 @@
 export const siteConfig = {
   name: 'Openterface',
-  url: 'https://en.openterface.com',
+  url: 'https://zh.openterface.com',
   legacyUrl: 'https://openterface.com',
   description:
-    'Ultra-compact KVM-over-USB solutions for IT professionals — KVM-GO, Mini-KVM, KeyMod, and uConsole KVM Extension.',
+    '专为 IT 专业人士打造的超紧凑 KVM-over-USB 解决方案 —— KVM-GO、Mini-KVM、KeyMod 和 uConsole KVM Extension。',
   ogImage: 'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
   accent: '#ff6e42',
   links: {
