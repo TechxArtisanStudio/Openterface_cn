@@ -1,11 +1,14 @@
 {
-  "name": "openterface_en",
+  "name": "openterface_zh",
   "type": "module",
   "version": "0.1.0",
   "engines": {
     "node": ">=22.12.0"
   },
   "scripts": {
+    "sync:videos": "node scripts/sync-home-videos.mjs",
+    "predev": "npm run sync:videos",
+    "prebuild": "npm run sync:videos",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
@@ -28,5 +31,6 @@
     "@types/node": "^22.13.10",
     "typescript": "^5.8.2",
     "wait-on": "^8.0.3"
-  }
+  },
+  "siteLocale": "zh"
 }

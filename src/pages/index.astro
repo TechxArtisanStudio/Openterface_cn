@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import HomeHeroCarousel from '../components/HomeHeroCarousel.astro';
+import HomeVideosStrip from '../components/HomeVideosStrip.astro';
 import DocLinkBanner from '../components/DocLinkBanner.astro';
 import { homeSlides, homeSeo } from '../data/homeSlides';
 import { siteConfig } from '../config/site';
@@ -13,6 +14,8 @@ import { siteConfig } from '../config/site';
   canonicalPath="/"
 >
   <HomeHeroCarousel slides={homeSlides} />
+
+  <HomeVideosStrip />
 
   <DocLinkBanner message="在我们迁移内容期间，您可以在 openterface.com 上查阅教程、常见问题及详细文档。" />
 
