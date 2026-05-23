@@ -8,7 +8,13 @@ export interface HomeSlide {
   image: string;
   imageAlt: string;
   images?: string[];
-  primaryCta?: { label: string; href: string; external?: boolean };
+  primaryCta?: {
+    label: string;
+    href: string;
+    external?: boolean;
+    analyticsEvent?: string;
+    analyticsProduct?: string;
+  };
   secondaryCta?: { label: string; href: string; external?: boolean };
   funding?: { amount: string; date: string; backers: string };
   progressSmall: string;
@@ -29,7 +35,7 @@ export const homeSlides: HomeSlide[] = [
       'https://assets2.openterface.com/images/keymod/keymod.webp',
       'https://assets2.openterface.com/images/keymod/feature.webp',
     ],
-    primaryCta: { label: '立即支持', href: siteConfig.links.keymodCrowdsupply, external: true },
+    primaryCta: { label: '立即支持', href: siteConfig.links.keymodCrowdsupply, external: true, analyticsEvent: 'crowdsupply_click', analyticsProduct: 'keymod' },
     secondaryCta: { label: '查看产品', href: '/products/keymod/' },
     progressSmall: 'KeyMod 系列',
     progressLarge: '将手机变为迷你键盘',
@@ -46,7 +52,7 @@ export const homeSlides: HomeSlide[] = [
       'https://assets.openterface.com/images/cover/kvm-go-triple.webp',
       'https://assets.openterface.com/images/cover/kvm-go-triple-2.webp',
     ],
-    primaryCta: { label: '立即预订', href: siteConfig.links.kvmgoPurchase, external: true },
+    primaryCta: { label: '立即预订', href: siteConfig.links.kvmgoPurchase, external: true, analyticsEvent: 'crowdsupply_click', analyticsProduct: 'kvm-go' },
     secondaryCta: { label: '查看产品', href: '/products/kvm-go/' },
     funding: { amount: '$101,548', date: 'Funded on Dec 30, 2025', backers: '478' },
     progressSmall: 'KVM-GO 系列',
@@ -64,7 +70,7 @@ export const homeSlides: HomeSlide[] = [
       'https://assets.openterface.com/images/cover/mini-kvm-toolkit.webp',
       'https://assets.openterface.com/images/cover/mini-kvm.webp',
     ],
-    primaryCta: { label: '立即下单', href: siteConfig.links.minikvmPurchase, external: true },
+    primaryCta: { label: '立即下单', href: siteConfig.links.minikvmPurchase, external: true, analyticsEvent: 'crowdsupply_click', analyticsProduct: 'minikvm' },
     secondaryCta: { label: '查看产品', href: '/products/minikvm/' },
     funding: { amount: '$505,471', date: 'Funded on Jun 13, 2024', backers: '3,775' },
     progressSmall: 'Mini-KVM 系列',
@@ -78,7 +84,7 @@ export const homeSlides: HomeSlide[] = [
       '探索我们的必备配件系列，包括视频适配器、高速线缆和存储解决方案。选用专为专业人士设计的高品质配件，提升您的 Openterface 使用体验。',
     image: 'https://assets.openterface.com/images/cover.webp',
     imageAlt: 'TxA Shop Accessories',
-    primaryCta: { label: '立即购买', href: siteConfig.links.shop, external: true },
+    primaryCta: { label: '立即购买', href: siteConfig.links.shop, external: true, analyticsEvent: 'shop_click', analyticsProduct: 'accessories' },
     secondaryCta: { label: '查看配件', href: '/products/accessories/' },
     progressSmall: 'TxA 商店',
     progressLarge: '选用高品质配件，完善您的装备',
