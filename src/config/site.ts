@@ -47,7 +47,7 @@ export const siteConfig = {
       storageKey: 'openterface-cookie-consent',
       title: 'Cookie 同意',
       description:
-        '我们使用 Cookie 来提升文档内容质量、分析网站效果与需求。您的同意将帮助我们改进网站。感谢！',
+        '我们使用 Cookie 来改进网站并分析使用情况。您的同意将帮助我们优化您的体验。感谢！',
       acceptLabel: '同意',
       rejectLabel: '拒绝',
       cookieLabel: 'Cookie',
