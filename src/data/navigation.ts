@@ -1,4 +1,4 @@
-import { legacyPath, newsPath } from '../config/site';
+import { docsPath, newsPath } from '../config/site';
 
 export interface NavItem {
   label: string;
@@ -22,10 +22,7 @@ export const mainNav: NavItem[] = [
   },
   { label: '视频', href: '/videos/' },
   { label: '使用案例', href: '/use-cases/' },
-  { label: '常见问题', href: legacyPath('/faq/'), external: true },
-  { label: '应用', href: legacyPath('/app/overview/'), external: true },
-  { label: '教程', href: legacyPath('/tutorial/'), external: true },
-  { label: '支持', href: legacyPath('/support/'), external: true },
+  { label: '文档', href: docsPath(), external: true },
   { label: '资讯', href: newsPath(), external: true },
   { label: '关于我们', href: '/about/' },
 ];

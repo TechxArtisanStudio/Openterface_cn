@@ -1,4 +1,4 @@
-import { legacyPath, siteConfig } from '../config/site';
+import { docsPath, siteConfig } from '../config/site';
 
 export interface ProductDocLink {
   label: string;
@@ -74,11 +74,11 @@ export const products: Record<string, Product> = {
     ],
     useCases: ['智能电视与自助终端输入', '移动工作流宏', '游戏与辅助功能设置'],
     docLinks: [
-      { label: '功能特性', href: legacyPath('/product/keymod/features/') },
-      { label: '开箱清单', href: legacyPath('/product/keymod/whats-in-the-box/') },
-      { label: '连接指南', href: legacyPath('/product/keymod/how-to-connect/') },
-      { label: '常见问题', href: legacyPath('/product/keymod/faq/') },
-      { label: '下载 KeyMod 应用', href: legacyPath('/app/overview/') },
+      { label: '功能特性', href: docsPath('/product/keymod/features/') },
+      { label: '开箱清单', href: docsPath('/product/keymod/whats-in-the-box/') },
+      { label: '连接指南', href: docsPath('/product/keymod/how-to-connect/') },
+      { label: '常见问题', href: docsPath('/product/keymod/faq/') },
+      { label: '下载 KeyMod 应用', href: docsPath('/app/overview/') },
     ],
     legacyBase: '/product/keymod/',
   },
@@ -127,11 +127,11 @@ export const products: Record<string, Product> = {
     ],
     useCases: ['数据中心巡检', '无头设备设置', '现场 IT 维护与个人实验室抢修'],
     docLinks: [
-      { label: '功能特性', href: legacyPath('/product/kvm-go/features/') },
-      { label: 'Beta 版快速入门', href: legacyPath('/product/kvm-go/beta-quick-start/') },
-      { label: '连接指南', href: legacyPath('/product/kvm-go/how-to-connect/') },
-      { label: '常见问题', href: legacyPath('/product/kvm-go/faq/') },
-      { label: '下载应用', href: legacyPath('/app/overview/') },
+      { label: '功能特性', href: docsPath('/product/kvm-go/features/') },
+      { label: 'Beta 版快速入门', href: docsPath('/product/kvm-go/beta-quick-start/') },
+      { label: '连接指南', href: docsPath('/product/kvm-go/how-to-connect/') },
+      { label: '常见问题', href: docsPath('/product/kvm-go/faq/') },
+      { label: '下载应用', href: docsPath('/app/overview/') },
     ],
     legacyBase: '/product/kvm-go/',
   },
@@ -180,11 +180,11 @@ export const products: Record<string, Product> = {
     ],
     useCases: ['个人实验室管理', '开发工作站并排控制', 'IT 工作台故障排除'],
     docLinks: [
-      { label: '功能特性', href: legacyPath('/product/minikvm/features/') },
-      { label: 'USB 切换', href: legacyPath('/product/minikvm/usb-switch/') },
-      { label: '技术支持', href: legacyPath('/product/minikvm/support/') },
-      { label: '常见问题', href: legacyPath('/product/minikvm/faq/') },
-      { label: '下载应用', href: legacyPath('/app/overview/') },
+      { label: '功能特性', href: docsPath('/product/minikvm/features/') },
+      { label: 'USB 切换', href: docsPath('/product/minikvm/usb-switch/') },
+      { label: '技术支持', href: docsPath('/product/minikvm/support/') },
+      { label: '常见问题', href: docsPath('/product/minikvm/faq/') },
+      { label: '下载应用', href: docsPath('/app/overview/') },
     ],
     legacyBase: '/product/minikvm/',
   },
@@ -203,7 +203,7 @@ export const products: Record<string, Product> = {
       'https://assets.openterface.com/images/uconsole-kvm-extension/uconsole-kvm-extension-1.webp',
     ],
     buyLabel: '了解更多',
-    buyHref: legacyPath('/product/uconsole-kvm-extension/'),
+    buyHref: docsPath('/product/uconsole-kvm-extension/'),
     painPoints: [
       '便携式控制台缺乏用于控制无头受控端的集成 KVM 功能',
       '现场技术人员希望一机多用',
@@ -226,10 +226,10 @@ export const products: Record<string, Product> = {
     ],
     useCases: ['便携式数据中心工具', '移动创客与个人实验室'],
     docLinks: [
-      { label: '硬件安装', href: legacyPath('/product/uconsole-kvm-extension/hardware-installation/') },
-      { label: '软件设置', href: legacyPath('/product/uconsole-kvm-extension/software-setup/') },
-      { label: '连接指南', href: legacyPath('/product/uconsole-kvm-extension/connect-to-target/') },
-      { label: '常见问题', href: legacyPath('/product/uconsole-kvm-extension/faq/') },
+      { label: '硬件安装', href: docsPath('/product/uconsole-kvm-extension/hardware-installation/') },
+      { label: '软件设置', href: docsPath('/product/uconsole-kvm-extension/software-setup/') },
+      { label: '连接指南', href: docsPath('/product/uconsole-kvm-extension/connect-to-target/') },
+      { label: '常见问题', href: docsPath('/product/uconsole-kvm-extension/faq/') },
     ],
     legacyBase: '/product/uconsole-kvm-extension/',
   },
@@ -257,7 +257,7 @@ export const products: Record<string, Product> = {
     specs: [],
     useCases: ['现场装备整理', '视频格式转换', 'IT 工具包备用线缆'],
     docLinks: [
-      { label: '所有规格', href: legacyPath('/product/accessories/') },
+      { label: '所有规格', href: docsPath('/product/accessories/') },
       { label: 'TxA 商店', href: siteConfig.links.shop },
     ],
     legacyBase: '/product/accessories/',
