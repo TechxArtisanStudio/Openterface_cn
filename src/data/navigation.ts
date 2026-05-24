@@ -8,7 +8,6 @@ export interface NavItem {
 }
 
 export const mainNav: NavItem[] = [
-  { label: '首页', href: '/' },
   {
     label: '产品',
     href: '#',
