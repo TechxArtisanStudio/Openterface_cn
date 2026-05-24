@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-const SITE_HOST = process.env.SITE_HOST || 'zh.openterface.com';
+const SITE_HOST = process.env.SITE_HOST || 'cn.openterface.com';
 
 const OG_LOCALE_BY_HOST: Record<string, string> = {
   'en.openterface.com': 'en_US',
@@ -9,10 +9,10 @@ const OG_LOCALE_BY_HOST: Record<string, string> = {
   'fr.openterface.com': 'fr_FR',
   'it.openterface.com': 'it_IT',
   'jp.openterface.com': 'ja_JP',
-  'ko.openterface.com': 'ko_KR',
+  'kr.openterface.com': 'ko_KR',
   'pt.openterface.com': 'pt_PT',
   'ro.openterface.com': 'ro_RO',
-  'zh.openterface.com': 'zh_CN',
+  'cn.openterface.com': 'zh_CN',
 };
 
 const EXPECTED_OG_LOCALE = OG_LOCALE_BY_HOST[SITE_HOST] ?? 'en_US';
