@@ -10,84 +10,48 @@ const KVMEXT_SHOP =
  */
 export const kvmextProduct: Product = {
   slug: 'uconsole-kvm-extension',
-  title: 'Openterface KVM Extension for uConsole',
-  slogan: 'Transform Your uConsole into a Portable KVM Console',
-  subtitle: 'Plug in. Take Control. Anywhere.',
+  title: "uConsole KVM Extension",
+  slogan: "为您的 uConsole 注入 KVM 能量",
+  subtitle: "将便携式 uConsole 转化为功能齐全的 KVM 终端。",
   status: 'oshwa',
   description:
-    'Replaces the 4G/LTE modem in your Clockwork uConsole expansion slot with direct HDMI input and USB HID control. Manage headless devices on the go — no external monitor, keyboard, or network configuration required.',
+    "为 Clockwork uConsole 增加 KVM-over-USB 功能的硬件扩展。内置键盘 and 显示屏，是便携式 IT 工作的理想选择。",
   seoDescription:
-    'Openterface KVM Extension turns the Clockwork uConsole into a portable KVM console. HDMI capture, USB HID, BIOS-level access, OSHWA certified open hardware.',
+    "uConsole KVM Extension 为 Clockwork uConsole 便携式计算机添加了 KVM-over-USB 功能。",
   keywords:
-    'uConsole KVM, KVM extension, portable KVM, Clockwork uConsole, HDMI KVM, USB HID, headless control, OSHWA',
+    "uConsole, KVM extension, portable KVM, Clockwork uConsole",
   heroImage:
     'https://assets.openterface.com/images/uconsole-kvm-extension/uconsole-kvm-extension-1.webp',
   heroImages: [
     'https://assets.openterface.com/images/uconsole-kvm-extension/uconsole-kvm-extension-1.webp',
     'https://assets.openterface.com/images/product/openterface-kvm-uconsole-extension.webp',
   ],
-  buyLabel: 'Order NOW',
+  buyLabel: "了解更多",
   buyHref: KVMEXT_SHOP,
   painPoints: [
-    'Portable consoles lack integrated KVM for headless targets',
-    'Field technicians carry separate monitors and keyboards for every fix',
-    'Network KVM needs configuration — useless when the target is offline',
+    "便携式控制台缺乏用于控制无头受控端的集成 KVM 功能",
+    "现场技术人员希望一机多用",
   ],
   solutions: [
-    'Native uConsole expansion board — screen and keyboard already built in',
-    'Direct HDMI + USB HID with no software on the target device',
-    'OSHWA-certified open hardware with full install and setup docs',
+    "适配 uConsole 外形的原生扩展板",
+    "在便携设备上运行完整的 Openterface KVM 技术栈",
   ],
   hwFeatures: [
-    {
-      title: 'Direct HDMI + USB HID',
-      description:
-        'Leverage the uConsole screen and controls with HDMI capture and full keyboard/mouse emulation.',
-    },
-    {
-      title: '4G/LTE slot form factor',
-      description: '37 × 77 mm PCB — drops into the uConsole expansion bay, no external cables to the host.',
-    },
-    {
-      title: 'BIOS-level access',
-      description: 'Reach firmware, boot menus, and recovery screens without network dependencies.',
-    },
-    {
-      title: 'Switchable USB 2.0 port',
-      description: 'Share USB storage between uConsole and target via the host app.',
-    },
-    {
-      title: 'Network-free control',
-      description: 'Stable headless access via HDMI capture and HID — no IP setup required.',
-    },
-    {
-      title: 'OSHWA certified',
-      description: 'Open Source Hardware Association UID CN000021 — schematics and firmware published.',
-    },
+    { title: "uConsole 原生设计", description: "专为 Clockwork uConsole 量身打造。" },
+    { title: "紧凑型 PCB", description: "可安装在 uConsole 机壳内部。" },
   ],
   swFeatures: [
-    {
-      title: 'Openterface host apps',
-      description: 'Same trusted QT stack as Mini-KVM and KVM-GO — macOS, Windows, Linux, Android.',
-    },
-    {
-      title: 'Text transfer',
-      description: 'Send usernames, passwords, and code snippets via simulated keystrokes (ASCII).',
-    },
-    {
-      title: 'Setup guides on docs',
-      description: 'Step-by-step hardware installation and software setup walkthroughs.',
-    },
+    { title: "Openterface 应用", description: "使用与 Mini-KVM 和 KVM-GO 相同且值得信赖的软件。" },
+    { title: "安装指南", description: "提供详尽的硬件和软件安装文档。" },
   ],
   specs: [
-    { label: 'Compatibility', value: 'Clockwork uConsole (4G/LTE expansion slot)' },
-    { label: 'Dimensions', value: '37 × 77 mm · 1.0 mm PCB' },
-    { label: 'Video input', value: 'Up to 4K @ 30 Hz (HDMI)' },
-    { label: 'Video output', value: '1080p @ 30 Hz, <140 ms latency' },
-    { label: 'Certification', value: 'OSHWA UID CN000021' },
-    { label: 'Target software', value: 'None required — plug and play' },
+    { label: "兼容性", value: "Clockwork uConsole" },
+    { label: "认证", value: "OSHWA certified" },
   ],
-  useCases: ['Portable datacenter tool', 'Maker & homelab on the go'],
+  useCases: [
+    "便携式数据中心工具",
+    "移动创客与个人实验室",
+  ],
   useCaseCards: [
     {
       title: 'Portable datacenter tool',
@@ -119,12 +83,10 @@ export const kvmextProduct: Product = {
   latestNewsSubtitle: 'Official Open Source Hardware Association certification for the uConsole KVM Extension.',
   latestNewsLabel: 'Read on Openterface News →',
   docLinks: [
-    { label: 'Features', href: docsPath('/products/kvmext/features/') },
-    { label: "What's in the Box", href: docsPath('/products/kvmext/whats-in-the-box/') },
-    { label: 'Hardware Installation', href: docsPath('/products/kvmext/hardware-installation/') },
-    { label: 'Software Setup', href: docsPath('/products/kvmext/software-setup/') },
-    { label: 'How to Connect', href: docsPath('/products/kvmext/connect-to-target/') },
-    { label: 'FAQs', href: docsPath('/products/kvmext/faq/') },
+    { label: "硬件安装", href: docsPath("/product/uconsole-kvm-extension/hardware-installation/") },
+    { label: "软件设置", href: docsPath("/product/uconsole-kvm-extension/software-setup/") },
+    { label: "连接指南", href: docsPath("/product/uconsole-kvm-extension/connect-to-target/") },
+    { label: "常见问题", href: docsPath("/product/uconsole-kvm-extension/faq/") },
   ],
-  legacyBase: '/products/kvmext/',
+  legacyBase: "/products/uconsole-kvm-extension/",
 };

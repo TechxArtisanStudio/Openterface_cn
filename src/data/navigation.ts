@@ -9,29 +9,29 @@ export interface NavItem {
 
 export const mainNav: NavItem[] = [
   {
-    label: 'Products',
+    label: "产品",
     href: '/products/',
     children: [
-      { label: 'All Products', href: '/products/' },
+      { label: "全部产品", href: '/products/' },
       { label: 'KeyMod Series', href: '/keymod/' },
       { label: 'KVM-GO Series', href: '/kvmgo/' },
       { label: 'Mini-KVM', href: '/minikvm/' },
       { label: 'uConsole KVM Extension', href: '/kvmext/' },
-      { label: 'Accessories', href: '/accessories/' },
+      { label: "配件", href: '/accessories/' },
     ],
   },
   {
-    label: 'Apps',
+    label: "应用",
     href: '/app/',
     children: [
-      { label: 'All Apps', href: '/app/' },
-      { label: 'KVM Control', href: '/kvm/' },
+      { label: "全部应用", href: '/app/' },
+      { label: "KVM 控制", href: '/kvm/' },
       { label: 'KeyCmd', href: '/keycmd/' },
     ],
   },
-  { label: 'Media', href: '/videos/' },
-  { label: 'About', href: '/about/' },
-  { label: 'Docs', href: docsPath(), external: true },
-  { label: 'News', href: newsPath(), external: true },
-  { label: 'Shop', href: siteConfig.links.shop, external: true },
+  { label: "媒体", href: '/videos/' },
+  { label: "关于我们", href: '/about/' },
+  { label: "文档", href: docsPath(), external: true },
+  { label: "新闻", href: newsPath(), external: true },
+  { label: "商店", href: siteConfig.links.shop, external: true },
 ];
