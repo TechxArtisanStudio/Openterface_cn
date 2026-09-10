@@ -9,6 +9,7 @@ export const zh: KeymodLandingStrings = {
     },
     nav: {
       docs: "文档",
+    forum: "论坛",
       preLaunchCta: "前往 Crowd Supply 支持",
     },
     povTabs: {
